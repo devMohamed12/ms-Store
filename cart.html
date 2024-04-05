@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="header" id="header">
+      <div class="container flex-between">
+        <!-- logo -->
+        <div class="logo-container">
+          <a href="index.html#header" class="logo">ms store</a>
+        </div>
+
+        <div class="responsive-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="index.html#header" class="nav-item-link">home</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#features" class="nav-item-link">features</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#products-section" class="nav-item-link"
+              >products</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="index.html#values" class="nav-item-link">about us</a>
+          </li>
+          <li class="nav-item nav-dropdown-container">
+            <a href="cart.html" class="cart-item nav-item-link">
+              <i class="fa-solid fa-cart-shopping cart-icon"></i>
+              <span class="cart-length flex-center"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- end header -->
+    <section class="cart" id="cart">
+      <h2 class="section-title">shopping cart</h2>
+
+      <div class="container">
+        <div class="cart-container">
+          <table class="cart-table">
+            <thead class="cart-table-thead">
+              <tr>
+                <th class="thead-description">description</th>
+                <th class="thead-count">count</th>
+                <th class="thead-remove">remove</th>
+
+                <th class="thead-price">price</th>
+              </tr>
+            </thead>
+
+            <tbody class="cart-table-tbody">
+              <!-- <tr class="cart-table-tbody-row">
+
+                            <td class="cart-product-description">
+                                <img src="pngwing.com(1).png" alt="" class="cart-table-tbody-row-img">
+                                <p class="cart-table-tbody-row-title"> lorem lorem lorem </p>
+                            </td> 
+                            
+                            <td>
+                                <div class="cart-count-container flex-center">
+                                    <button class="add-to-cart-btn">+</button>
+                                    <p class="prodcut-count">1</p>
+                                    <button class="minus-from-cart-btn">-</button>
+                                </div>
+                            </td>
+                            <td>
+                                <button  class="remove-from-cart-btn">X</button>
+                            </td>
+
+                            <td class="cart-product-price-container">
+                                
+                                <p class="cart-product-price">
+                                    100 <span class="product-currency">$</span>
+
+                                </p>
+                            </td>
+                        </tr> -->
+            </tbody>
+
+            <tfoot class="tfoot">
+              <td colspan="2">total price</td>
+              <td colspan="2" class="total-price"></td>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer class="footer flex-center">
+      <p>created with big love by mohamed samy</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <!-- <script src="main2.js" ></script> -->
+  </body>
+</html>
